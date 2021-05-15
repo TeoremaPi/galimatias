@@ -1,0 +1,41 @@
+body{
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5%;
+    font-weight:900;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+h1, h2 {
+    width: 100%;
+    font-weight: 900;
+}
+
+div {
+    padding: 3px;
+    margin-left: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    background-color: lightgray;
+}
+
+label{
+    font-weight: normal;
+}
+
+td {
+    padding-right: 20px;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}

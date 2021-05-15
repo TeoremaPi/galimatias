@@ -1,0 +1,82 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+    <div style="width: 70%; margin: auto;">
+        <h1 style="margin-top: 0;">Galimatizador</h1>
+
+        <h2 style="margin-top: 0;">Entrada</h2>
+
+        <div>
+           
+            Idioma:
+            <div>
+                <input type="radio" name="language" id="radioSpanish" value="spanish" checked=true>
+                <label for="radioSpanish">Español</label>
+                <br>
+                <input type="radio" name="language" id="radioOinecs" value="oinecs">
+                <label for="radioOinecs">Galimatías</label>
+            </div>
+            
+            <br>
+    
+            <textarea id="inputText" rows="4"></textarea>
+        </div>
+        
+    
+        <h2>Traducción</h2>
+    
+        <div>
+            
+            <textarea readonly id="outputText" rows="4"></textarea>
+            
+        </div>
+        
+        <div style="margin-top: 10px;">
+            Normas:
+            <div>
+
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="rule" id="boxUentos" value="uentos" checked=true>
+                            <label for="boxUentos">uentos</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="rule" id="box72" value="72" checked=true>
+                            <label for="box72">72</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="rule" id="boxAkka" value="akka" checked=true>
+                            <label for="boxAkka">akka</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="rule" id="boxUla" value="ula" checked=true>
+                            <label for="boxUla">ula</label>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+    
+            
+        </div>
+        <button onclick="translateFun()">Traducir</button>
+        
+    
+    
+    </div>
+
+</body>
+</html>
