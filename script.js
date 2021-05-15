@@ -61,3 +61,17 @@ function translateFun(){
 function getValueById (Id) {
     return document.getElementById(Id).checked
 }
+
+function copyToClipboard(){
+    var copyText = document.getElementById("outputText")
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+
+    document.execCommand("copy")
+
+    copyText.setSelectionRange(0, 0)
+
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
